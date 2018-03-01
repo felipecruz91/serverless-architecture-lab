@@ -43,8 +43,8 @@ namespace TollBooth
             const string requestParameters = "language=unk&detectOrientation=true";
             // Get the API URL and the API key from settings.
             // TODO 2: Populate the below two variables with the correct AppSettings properties.
-            var uriBase = ConfigurationManager.AppSettings[""];
-            var apiKey = ConfigurationManager.AppSettings[""];
+            var uriBase = ConfigurationManager.AppSettings["computerVisionApiUrl"];
+            var apiKey = ConfigurationManager.AppSettings["computerVisionApiKey"];
 
             var resiliencyStrategy = DefineAndRetrieveResiliencyStrategy();
 
